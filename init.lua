@@ -593,8 +593,11 @@ require('lazy').setup({
         pyright = {
           settings = {
             python = {
+              pythonPath = vim.fn.getcwd() .. '/.venv/bin/python',
               analysis = {
                 extraPaths = { '.' },
+                autoSearchPaths = true,
+                useLibraryCodeForTypes = true,
               },
             },
           },
