@@ -4,6 +4,10 @@
 -- See the kickstart.nvim README for more information
 return {
   {
+    'christoomey/vim-tmux-navigator',
+    lazy = false,
+  },
+  {
     'stevearc/oil.nvim',
     ---@module 'oil'
     ---@type oil.SetupOpts
